@@ -1,0 +1,4 @@
+#!/bin/sh
+
+eval `keychain --eval id_rsa`
+eval `keychain --agents gpg`
