@@ -13,7 +13,7 @@ for symlinks, should symlink abs path or else it will not know where to symlink 
 
 > ln -s /usr/local/bin/python3 /bin/python3 , so i can get script working
 
-'''
+```
 #!/bin/sh
 # $OpenBSD: xinitrc.cpp,v 1.13 2015/10/17 08:25:11 matthieu Exp $
 # if we have private ssh key(s), start ssh-agent and add the key(s)
@@ -33,6 +33,5 @@ for symlinks, should symlink abs path or else it will not know where to symlink 
 # deletes all ideneites
 # 	eval `ssh-agent -s -k`
 # fi
-'''
-
+```
 
