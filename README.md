@@ -5,6 +5,12 @@ scripts located in /usr/local/bin
 slp: sleep command, alias does not act like sh scripts
 needs to be script since u cannot run commands async
 
+# source
+reload file 
+```
+. /full/file/name
+```
+
 # symlink
 
 for symlinks, should symlink abs path or else it will not know where to symlink from
