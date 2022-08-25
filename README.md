@@ -41,3 +41,7 @@ for symlinks, should symlink abs path or else it will not know where to symlink 
 # fi
 ```
 
+# firefox
+enable toolkit.legacyUserProfileCustomizations.stylesheets
+userChrome.css should be in profile folder
+profile folder can be found in help

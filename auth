@@ -1,4 +1,6 @@
 #!/bin/sh
 
+eval `ssh-agent -s`
 eval `keychain --eval id_rsa`
-eval `keychain --agents gpg`
+gpg --list-keys --keyid-format=long
+echo "eval \`keychain --agents gpg\`"
