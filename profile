@@ -10,3 +10,5 @@ export HISTFILE="$HOME/.ksh_history"
 export ENV=$HOME/.kshrc
 
 export GPG_TTY=$(tty)
+
+# ssh-agent ksh, only works for first shell
