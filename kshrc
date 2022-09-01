@@ -10,6 +10,8 @@ alias music='mpv --no-video'
 alias bc='bc -l'
 alias chr='chown -R _syncthing:_syncthing'
 
+alias rshell='rshell -e vim'
+
 #set -o vi
 
 # eval `ssh-agent -s`
@@ -24,3 +26,7 @@ alias pledge_firefox='doas cp /usr/local/lib/firefox/browser/defaults/preference
 
 # echo
 echo "tmux? auth?"
+
+# edit /etc/group or usermod -G 
+# exec su -l $USER
+

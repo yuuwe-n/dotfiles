@@ -1,4 +1,3 @@
-
 # CUSTOM SCRIPTS
 scripts located in /usr/local/bin
 
