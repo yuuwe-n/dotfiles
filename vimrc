@@ -1,4 +1,6 @@
-:set number relativenumber
+":set number relativenumber
+:set number 
+
 :set backspace=indent,eol,start
 
 

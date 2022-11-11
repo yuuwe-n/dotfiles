@@ -1,5 +1,10 @@
 ! $OpenBSD: dot.Xdefaults,v 1.3 2014/07/10 10:22:59 jasper Exp $
+!XTerm*loginShell:true
+!XTerm*vt100.translations: #override
+!Shift Ctrl <Key> C: copy-selection(CLIPBOARD) n
+!Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
 XTerm*loginShell:true
-XTerm*vt100.translations: #override
-Shift Ctrl <Key> C: copy-selection(CLIPBOARD) n
-Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+XTerm*selectToClipboard:true
+xterm.vt100.translations: #override \n\
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)

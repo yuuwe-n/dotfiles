@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tarsnap --list-archives
+tarsnap --print-stats --humanize-numbers

@@ -1,8 +1,12 @@
-# CUSTOM SCRIPTS
-scripts located in /usr/local/bin
+# custom scripts
+scripts should be in ~/bin folder
 
-slp: sleep command, alias does not act like sh scripts
-needs to be script since u cannot run commands async
+.profile should have ~/bin inside path
+
+slp: sleep command, alias does not act like sh scripts needs to be script since u cannot run commands async
+
+# applications
+[pfetch](https://github.com/dylanaraps/pfetch)
 
 # source
 reload file 

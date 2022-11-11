@@ -37,6 +37,7 @@ fi
 xset b off &
 xterm -geometry 80x24 &
 feh --bg-center /home/yuuwe/dotfiles/bg.png &
+autocutsel &
 exec dwm
 #fvwm || xterm
 # if [ "$SSH_AGENT_PID" ]; then

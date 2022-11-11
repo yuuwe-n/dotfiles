@@ -11,4 +11,6 @@ export ENV=$HOME/.kshrc
 
 export GPG_TTY=$(tty)
 
+export PICO_SDK_PATH=$HOME/downloads/pico-sdk
+
 # ssh-agent ksh, only works for first shell
