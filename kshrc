@@ -6,6 +6,8 @@ mu=${sy}/music
 
 # aliases
 # make into script, if $1 = null or smth, ask overwrite, or save date
+alias mpv='mpv --volume=80'
+
 alias ss='xclip -selection clipboard -o > ~/pictures/$(date +%y%m%d%H%M%S).png'
 alias less='less -N'
 #alias sss='xclip -selection clipboard -o > "$1"/$(date +%y%m%d%H%M%S).png'
@@ -22,6 +24,12 @@ alias chr='chown -R _syncthing:_syncthing'
 # alias rshell='rshell -e vim'
 alias ampy='ampy --port /dev/ttyU0'
 alias minicom='minicom -D /dev/ttyU0 -b 115200'
+
+# ctf
+
+#alias 
+
+# make tm : tmux script 
 
 #set -o vi
 
@@ -45,4 +53,4 @@ alias pledge_firefox='doas cp /usr/local/lib/firefox/browser/defaults/preference
 # openbsd$ fortune -o 
 # I love this fucking University, and this University loves fucking me.
 
-fortune -o | tee -a /home/yuuwe/syncthing/notes/fortune.md
+fortune -a | tee -a /home/yuuwe/notes/fortune.md

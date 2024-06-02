@@ -1,0 +1,23 @@
+#!/bin/sh
+
+while getopts p name
+do
+	case $name in
+		p)	portal=1;;
+		?)	echo "Usage: cw [-p]"; exit 2;;
+	esac
+done
+
+#doas sh /etc/netstart iwm0
+
+for i in $(seq 5 0)
+do
+sleep 1
+echo -n "Connecting in $i \r"
+done
+
+if [ $portal ]
+then xdg-open "https://detectportal.firefox.com/canonical.html";
+fi
+
+ifconfig

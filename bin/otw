@@ -1,0 +1,44 @@
+#!/bin/sh
+
+usage="Usage: otw [-c] [-p password] [level_name]"
+
+while getopts cp: name
+do
+	case $name in
+	c)	connect=1 ;;
+	p)	pass=$OPTARG ;;
+	?)	echo $usage; exit 2 ;;
+	esac
+done
+shift $(($OPTIND - 1))
+
+level=$1
+
+if [ ! $level ]
+then { echo $usage;  exit; };
+fi
+
+
+echo $level
+set -A $level 1
+
+
+if [ $pass ]
+then { echo $pass; eval $level[0]; };
+fi
+
+if [ $connect ]
+then echo "hi";
+fi
+
+# function main {
+# 	sshpass -p "$b2" ssh bandit2@bandit.labs.overthewire.org -p 2220;
+# }
+# 
+# 
+# b=2;
+# 
+# . ~/bin/otw.pass
+# echo ${b2}
+# 
+# main

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sh /etc/netstart iwm0
+xdg-open "detectportal.firefox.com/canonical.html"

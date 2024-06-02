@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# TODO:
+# idk for playlists of same name
+
+ls /home/yuuwe/music/*.playlist
+
+echo -n "ENTER playlist name only: "
+read regex
+
+playlist=$(echo /home/yuuwe/music/${regex}*.playlist)
+
+echo PLAYING ${playlist}
+
+mpv --playlist=${playlist} --loop-playlist --no-video
+
+

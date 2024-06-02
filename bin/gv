@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# get video, youtube-dl
+
+cd ~/music
+youtube-dl -f bestaudio $1 
